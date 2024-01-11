@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+body{
+  background: #132940;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Rubik',sans-serif;
+  min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.brand{
+  text-align: center;
+  margin: 50px 0px;
+}
+.wrapper{
+  border: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  width: 60vw;
+  flex: 1;
+}
+.content{
+  padding: 10px;
+}
+.tabs{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 0px;
+}
+.tabs li{
+  padding: 0;
+  margin: 0;
+}
+.tabs li a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 4px 10px;
+  display: block;
+  margin-bottom: 0;
+}
+.tabs li a.active{
+  border-bottom: 2px solid #ccc;
+}
+.coinwrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.coinwrapper:hover{
+  background: linear-gradient(to right, #b92b27,#1565c0);
+  scale: 1.04;
+}
+.coinwrapper .leftarea{
+  display: flex;
+  min-width: 60%;
+}
+.icon{
+  margin-right: 10px;
+}
+.desc{
+  padding: 5px;
+}
+.desc h4{
+  font-weight: 600;
+  font-size: 18px;
+}
+.desc p{
+  font-weight: 300;
+}
+.highlow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.highlow span{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+.chart{
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn{
+  background: rgba(0,0,0,0.2);
+  border: none;
+  color: #aaa;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn:hover{
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+}
+.rank{
+  font-size: 12px;
+  display: flex;
+}
+.rank span{
+  background-color: #000;
+  color: #eee;
+  padding: 2px 5px;
+}
+.coindata{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.mt-4{
+  margin-top: 15px;
+}
+.marketdata{
+  font-size: 14px;
+}
+.marketdata .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(200,200,200,0.5);
+  padding: 10px 5px;
+}
+.pricechange{
+  display: flex;
+  flex-direction: row;
+}
+.pricechange .col{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 1px;
+}
+.pricechange .col span{
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding: 5px;
+}
+.pricechange .col span:first-child{
+  background: rgba(237, 166, 166, 0.1);
+}
+
+.spinicon{
+  z-index: -1;
+  position: fixed;
+  scale: 30;
+  left: 25%;
+  top: 30%;
+  color: rgba(120,120,120,0.1);
+  animation-name: spin;
+  animation-duration: 150000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
